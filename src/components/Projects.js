@@ -3,32 +3,68 @@ import { motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
 
 export default function Projects() {
-  const projects = [
-    {
-      title: 'IJSAR - Innovative Justice Solutions',
-      description: 'A professional platform showcasing innovative justice and legal solutions with modern web design and seamless user experience.',
-      tags: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL'],
-      gradient: 'from-blue-500 to-cyan-500',
-      link: 'https://ijsar.org/',
-      github: '#'
-    },
-    {
-      title: 'Plasulj - Premium Plastic Solutions',
-      description: 'E-commerce platform for premium plastic products with product catalog, pricing, and customer inquiry features. Built for modern commerce.',
-      tags: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL'],
-      gradient: 'from-purple-500 to-pink-500',
-      link: 'https://plasulj.com.ng/',
-      github: '#'
-    },
-    {
-      title: 'PlasuJalis - Fashion & Lifestyle',
-      description: 'Elegant lifestyle and fashion platform featuring curated collections, product showcase, and premium user interface design.',
-      tags: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL'],
-      gradient: 'from-green-500 to-emerald-500',
-      link: 'https://plasujalis.com/',
-      github: '#'
-    }
-  ];
+const projects = [
+  {
+    title: 'IJSAR - International Journal of Scientific and Academic Research',
+    description: 'A peer-reviewed academic journal platform publishing innovative research across multiple disciplines. Features manuscript submission, review system, and scholarly publication management.',
+    tags: ['Academic Publishing', 'Peer Review', 'Research Platform', 'PHP', 'MySQL'],
+    gradient: 'from-blue-500 to-cyan-500',
+    link: 'https://ijsar.org/',
+    github: '#',
+    category: 'Academic Journal',
+    features: ['Manuscript Submission', 'Peer Review System', 'Academic Publishing', 'Research Database']
+  },
+  {
+    title: 'Plasulj - Plateau State University Journal',
+    description: 'Academic journal platform for Plateau State University, facilitating scholarly publications, research dissemination, and academic community engagement with modern digital infrastructure.',
+    tags: ['University Journal', 'Research Dissemination', 'Academic Platform', 'PHP', 'MySQL'],
+    gradient: 'from-purple-500 to-pink-500',
+    link: 'https://plasulj.com.ng/',
+    github: '#',
+    category: 'University Journal',
+    features: ['Scholarly Publications', 'University Research', 'Academic Community', 'Digital Archives']
+  },
+  {
+    title: 'PlasuJalis - Journal of Academic and Literary Studies',
+    description: 'Multidisciplinary academic journal platform focusing on literary studies, humanities, and social sciences research with comprehensive publication management and digital archiving.',
+    tags: ['Literary Journal', 'Humanities Research', 'Academic Publishing', 'PHP', 'MySQL'],
+    gradient: 'from-green-500 to-emerald-500',
+    link: 'https://plasujalis.com/',
+    github: '#',
+    category: 'Literary Journal',
+    features: ['Literary Research', 'Humanities Scholarship', 'Multidisciplinary Studies', 'Digital Archiving']
+  },
+  {
+  title: 'CRCCM - Faith Based Organization Website',
+  description: 'A comprehensive website for a faith-based organization featuring sermon archives, event management, donation system, and community engagement tools to connect members and spread their mission online.',
+  tags: ['Religious Organization', 'Community Platform', 'Event Management', 'React', 'Node.js'],
+  gradient: 'from-blue-500 to-indigo-500',
+  link: 'https://crcmm-website.vercel.app/',
+  github: '#',
+  category: 'Faith-Based Platform',
+  features: ['Sermon Archives', 'Event Calendar', 'Donation System', 'Member Community']
+},
+{
+  title: 'Steps Plus - Portfolio Website',
+  description: 'Modern, responsive portfolio website showcasing creative work and professional services with elegant design, smooth animations, and optimized user experience for maximum engagement and conversion.',
+  tags: ['Portfolio', 'Creative Design', 'Responsive', 'React', 'Tailwind CSS'],
+  gradient: 'from-purple-500 to-pink-500',
+  link: 'https://steps-plus.vercel.app/',
+  github: '#',
+  category: 'Portfolio Website',
+  features: ['Responsive Design', 'Project Showcase', 'Contact Integration', 'Performance Optimized']
+},
+{
+  title: 'The Tropical Journal - Academic Research Platform',
+  description: 'Digital academic journal platform for publishing tropical research studies, featuring manuscript submission, peer review workflow, and open-access publication system for global research dissemination.',
+  tags: ['Academic Journal', 'Research Platform', 'Peer Review', 'PHP', 'MySQL'],
+  gradient: 'from-green-500 to-emerald-500',
+  link: 'https://thetropicaljournal.org/',
+  github: '#',
+  category: 'Academic Journal',
+  features: ['Manuscript Submission', 'Peer Review System', 'Open Access', 'Research Database']
+}
+];
 
   const containerVariants = {
     hidden: { opacity: 0 },
