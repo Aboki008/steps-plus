@@ -5,6 +5,16 @@ import { ExternalLink } from 'lucide-react';
 export default function Projects() {
 const projects = [
   {
+    title: 'PLASUJHS - International Journal of Academic Research (Health Sciences)',
+    description: 'A peer-reviewed academic journal platform publishing innovative research across multiple disciplines. Features manuscript submission, review system, and scholarly publication management.',
+    tags: ['Academic Publishing', 'Peer Review', 'Research Platform', 'PHP', 'MySQL'],
+    gradient: 'from-blue-500 to-cyan-500',
+    link: 'http://plasujhs.com.ng/',
+    github: '#',
+    category: 'Academic Journal',
+    features: ['Manuscript Submission', 'Peer Review System', 'Academic Publishing', 'Research Database']
+  },
+  {
     title: 'IJSAR - International Journal of Scientific and Academic Research',
     description: 'A peer-reviewed academic journal platform publishing innovative research across multiple disciplines. Features manuscript submission, review system, and scholarly publication management.',
     tags: ['Academic Publishing', 'Peer Review', 'Research Platform', 'PHP', 'MySQL'],
@@ -14,6 +24,16 @@ const projects = [
     category: 'Academic Journal',
     features: ['Manuscript Submission', 'Peer Review System', 'Academic Publishing', 'Research Database']
   },
+  {
+  title: 'CRCCM - Faith Based Organization Website',
+  description: 'A comprehensive website for a faith-based organization featuring sermon archives, event management, donation system, and community engagement tools to connect members and spread their mission online.',
+  tags: ['Religious Organization', 'Community Platform', 'Event Management', 'React', 'Node.js'],
+  gradient: 'from-blue-500 to-indigo-500',
+  link: 'https://crcmm-website.vercel.app/',
+  github: '#',
+  category: 'Faith-Based Platform',
+  features: ['Sermon Archives', 'Event Calendar', 'Donation System', 'Member Community']
+},
   {
     title: 'Plasulj - Plateau State University Journal',
     description: 'Academic journal platform for Plateau State University, facilitating scholarly publications, research dissemination, and academic community engagement with modern digital infrastructure.',
@@ -35,11 +55,11 @@ const projects = [
     features: ['Literary Research', 'Humanities Scholarship', 'Multidisciplinary Studies', 'Digital Archiving']
   },
   {
-  title: 'CRCCM - Faith Based Organization Website',
-  description: 'A comprehensive website for a faith-based organization featuring sermon archives, event management, donation system, and community engagement tools to connect members and spread their mission online.',
-  tags: ['Religious Organization', 'Community Platform', 'Event Management', 'React', 'Node.js'],
+  title: 'FCAHPT Vom - Federal College Website',
+  description: 'A comprehensive website for a federal college featuring blog, management,  Student system, and community engagement tools to keep the public informed.',
+  tags: ['Educational Organization', 'College Platform', 'Student Management', 'React', 'Node.js'],
   gradient: 'from-blue-500 to-indigo-500',
-  link: 'https://crcmm-website.vercel.app/',
+  link: 'https://fcahptvom.sch.ng/',
   github: '#',
   category: 'Faith-Based Platform',
   features: ['Sermon Archives', 'Event Calendar', 'Donation System', 'Member Community']
