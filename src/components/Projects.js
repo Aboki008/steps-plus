@@ -74,6 +74,16 @@ const projects = [
   category: 'Portfolio Website',
   features: ['Responsive Design', 'Project Showcase', 'Contact Integration', 'Performance Optimized']
 },
+  {
+    title: 'PLASUJHS - International Journal of Academic Research (Health Sciences)',
+    description: 'A peer-reviewed academic journal platform publishing innovative research across multiple disciplines. Features manuscript submission, review system, and scholarly publication management.',
+    tags: ['Academic Publishing', 'Peer Review', 'Research Platform', 'PHP', 'MySQL'],
+    gradient: 'from-blue-500 to-cyan-500',
+    link: 'http://plasujhs.com.ng/',
+    github: '#',
+    category: 'Academic Journal',
+    features: ['Manuscript Submission', 'Peer Review System', 'Academic Publishing', 'Research Database']
+  },
 {
   title: 'The Tropical Journal - Academic Research Platform',
   description: 'Digital academic journal platform for publishing tropical research studies, featuring manuscript submission, peer review workflow, and open-access publication system for global research dissemination.',
