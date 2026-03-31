@@ -15,6 +15,26 @@ const projects = [
     features: ['Manuscript Submission', 'Peer Review System', 'Academic Publishing', 'Research Database']
   },
   {
+  title: 'Integrity Cooperative Savings & Loans',
+  description: 'A trusted cooperative platform providing secure savings plans and accessible loan services. Designed to empower members through financial inclusion, transparent operations, and sustainable wealth growth.',
+  tags: ['Cooperative Society', 'Savings & Loans', 'Financial Services', 'Member Empowerment', 'Nigeria'],
+  gradient: 'from-green-600 to-emerald-500',
+  link: 'https://ictls.com.ng/',
+  github: '#',
+  category: 'Cooperative Finance',
+  features: ['Member Registration', 'Savings Contributions', 'Loan Application & Approval', 'Financial Transparency']
+},
+  {
+    title: 'PLASUJHS - International Journal of Academic Research (Health Sciences)',
+    description: 'A peer-reviewed academic journal platform publishing innovative research across multiple disciplines. Features manuscript submission, review system, and scholarly publication management.',
+    tags: ['Academic Publishing', 'Peer Review', 'Research Platform', 'PHP', 'MySQL'],
+    gradient: 'from-blue-500 to-cyan-500',
+    link: 'https://plasujer.com.ng/',
+    github: '#',
+    category: 'Academic Journal',
+    features: ['Manuscript Submission', 'Peer Review System', 'Academic Publishing', 'Research Database']
+  },
+  {
     title: 'IJSAR - International Journal of Scientific and Academic Research',
     description: 'A peer-reviewed academic journal platform publishing innovative research across multiple disciplines. Features manuscript submission, review system, and scholarly publication management.',
     tags: ['Academic Publishing', 'Peer Review', 'Research Platform', 'PHP', 'MySQL'],
@@ -61,8 +81,8 @@ const projects = [
   gradient: 'from-blue-500 to-indigo-500',
   link: 'https://fcahptvom.sch.ng/',
   github: '#',
-  category: 'Faith-Based Platform',
-  features: ['Sermon Archives', 'Event Calendar', 'Donation System', 'Member Community']
+  category: 'Education Platform',
+  features: ['News & Announcements', 'Admissions Information', 'Student Resources', 'Content Management']
 },
 {
   title: 'Steps Plus - Portfolio Website',
@@ -74,16 +94,6 @@ const projects = [
   category: 'Portfolio Website',
   features: ['Responsive Design', 'Project Showcase', 'Contact Integration', 'Performance Optimized']
 },
-  {
-    title: 'PLASUJHS - International Journal of Academic Research (Health Sciences)',
-    description: 'A peer-reviewed academic journal platform publishing innovative research across multiple disciplines. Features manuscript submission, review system, and scholarly publication management.',
-    tags: ['Academic Publishing', 'Peer Review', 'Research Platform', 'PHP', 'MySQL'],
-    gradient: 'from-blue-500 to-cyan-500',
-    link: 'http://plasujhs.com.ng/',
-    github: '#',
-    category: 'Academic Journal',
-    features: ['Manuscript Submission', 'Peer Review System', 'Academic Publishing', 'Research Database']
-  },
 {
   title: 'The Tropical Journal - Academic Research Platform',
   description: 'Digital academic journal platform for publishing tropical research studies, featuring manuscript submission, peer review workflow, and open-access publication system for global research dissemination.',
@@ -95,6 +105,15 @@ const projects = [
   features: ['Manuscript Submission', 'Peer Review System', 'Open Access', 'Research Database']
 }
 ];
+
+  const normalizedProjects = projects
+    .filter((project) => project && typeof project === 'object' && project.title)
+    .map((project) => ({
+      ...project,
+      tags: Array.isArray(project.tags) ? project.tags : [],
+      gradient: project.gradient || 'from-blue-500 to-cyan-500',
+      link: project.link || ''
+    }));
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -147,7 +166,7 @@ const projects = [
         whileInView="visible"
         viewport={{ once: true }}
       >
-        {projects.map((project, index) => (
+        {normalizedProjects.map((project, index) => (
           <motion.div
             key={index}
             variants={itemVariants}
@@ -156,12 +175,14 @@ const projects = [
           >
             {/* Screenshot (live site) with gradient overlay on hover */}
             <div className="relative h-40 overflow-hidden bg-gray-800">
-              <img
-                src={`https://s.wordpress.com/mshots/v1/${encodeURIComponent(project.link)}?w=1200`}
-                alt={`${project.title} screenshot`}
-                className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
-                onError={(e) => { e.currentTarget.style.display = 'none'; }}
-              />
+              {project.link ? (
+                <img
+                  src={`https://s.wordpress.com/mshots/v1/${encodeURIComponent(project.link)}?w=1200`}
+                  alt={`${project.title} screenshot`}
+                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
+                  onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                />
+              ) : null}
               <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-20 transition-opacity duration-300`} />
             </div>
 
@@ -211,27 +232,35 @@ const projects = [
 
               {/* Links */}
               <div className="flex gap-3 pt-4 border-t border-gray-800">
-                <motion.a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="flex-1 flex items-center justify-center gap-2 bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg font-medium transition-colors text-sm"
-                >
-                  <ExternalLink size={16} />
-                  Visit Live
-                </motion.a>
-                <motion.a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="flex-1 flex items-center justify-center gap-2 border border-gray-700 hover:border-blue-500 text-gray-400 hover:text-blue-400 py-2 rounded-lg font-medium transition-colors text-sm"
-                >
-                  Details
-                </motion.a>
+                {project.link ? (
+                  <motion.a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="flex-1 flex items-center justify-center gap-2 bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg font-medium transition-colors text-sm"
+                  >
+                    <ExternalLink size={16} />
+                    Visit Live
+                  </motion.a>
+                ) : (
+                  <div className="flex-1 flex items-center justify-center gap-2 bg-gray-800 text-gray-400 py-2 rounded-lg font-medium text-sm border border-gray-700">
+                    No Live Link
+                  </div>
+                )}
+                {project.github && project.github !== '#' && (
+                  <motion.a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="flex-1 flex items-center justify-center gap-2 border border-gray-700 hover:border-blue-500 text-gray-400 hover:text-blue-400 py-2 rounded-lg font-medium transition-colors text-sm"
+                  >
+                    Details
+                  </motion.a>
+                )}
               </div>
             </div>
           </motion.div>
