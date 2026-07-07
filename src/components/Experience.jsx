@@ -13,7 +13,7 @@ const experiences = [
     description:
       'Tutor and mentor students in software engineering, web development, and programming fundamentals. Guide students through practical projects, code reviews, and career preparation in the tech industry.',
     skills:     ['Teaching', 'Mentoring', 'Software Engineering', 'Web Development'],
-    color:      'text-amber-400',
+    color:      'text-amber-600 dark:text-amber-400',
     dot:        '#f59e0b',
   },
   {
@@ -25,7 +25,7 @@ const experiences = [
     description:
       'Built and maintained websites and web systems for academic, educational, portfolio, and finance use cases. Developed backend systems with secure forms, user sessions, admin roles, API integrations, and reporting features.',
     skills:     ['PHP', 'Laravel', 'Next.js', 'MySQL', 'WordPress', 'Tailwind CSS'],
-    color:      'text-emerald-400',
+    color:      'text-emerald-600 dark:text-emerald-400',
     dot:        '#10b981',
   },
   {
@@ -37,7 +37,7 @@ const experiences = [
     description:
       'Worked on website/content support, page structuring, and digital service presentation. Supported online content for recruitment, outsourcing, corporate training, project management, and HR business solutions.',
     skills:     ['WordPress', 'Content Strategy', 'Page Structuring', 'Digital Services'],
-    color:      'text-blue-400',
+    color:      'text-blue-600 dark:text-blue-400',
     dot:        '#38bdf8',
   },
   {
@@ -49,7 +49,7 @@ const experiences = [
     description:
       'Updated website content, organised digital files, and improved online page structure for better readability. Used AI tools and productivity platforms to speed up research, content assistance, and task delivery.',
     skills:     ['AI Tools', 'Content Development', 'Research', 'Email Outreach'],
-    color:      'text-purple-400',
+    color:      'text-purple-600 dark:text-purple-400',
     dot:        '#a78bfa',
   },
 ];
@@ -83,7 +83,7 @@ export default function Experience() {
           viewport={{ once: true }}
         >
           <span className="code-pill mb-4 inline-block">experience.json</span>
-          <h2 className="section-heading text-white">
+          <h2 className="section-heading text-gray-900 dark:text-white">
             Career Journey
           </h2>
         </motion.div>
@@ -104,12 +104,12 @@ export default function Experience() {
               >
                 {/* Timeline dot */}
                 <div
-                  className="absolute left-3.5 top-6 w-3 h-3 rounded-full border-2 border-dark-950 hidden sm:block"
+                  className="absolute left-3.5 top-6 w-3 h-3 rounded-full border-2 border-gray-50 dark:border-dark-950 hidden sm:block"
                   style={{ background: exp.dot }}
                 />
 
                 {/* Card */}
-                <div className="glass-card border border-white/5 p-6 glass-card-hover">
+                <div className="glass-card border border-gray-200 dark:border-white/5 p-6 glass-card-hover">
                   {/* Top row */}
                   <div className="flex flex-wrap items-start justify-between gap-3 mb-4">
                     <div>
@@ -120,14 +120,14 @@ export default function Experience() {
                         >
                           {exp.company}
                         </span>
-                        <span className="text-[10px] px-2 py-0.5 rounded-full bg-dark-700 text-gray-500 border border-white/8">
+                        <span className="text-[10px] px-2 py-0.5 rounded-full bg-gray-200 dark:bg-dark-700 text-gray-600 dark:text-gray-500 border border-gray-300 dark:border-white/8">
                           {exp.type}
                         </span>
                       </div>
-                      <h3 className="text-white font-bold text-lg leading-snug">{exp.position}</h3>
+                      <h3 className="text-gray-900 dark:text-white font-bold text-lg leading-snug">{exp.position}</h3>
                     </div>
 
-                    <div className="flex flex-col items-end gap-1 text-xs text-gray-500">
+                    <div className="flex flex-col items-end gap-1 text-xs text-gray-500 dark:text-gray-400">
                       <span className="flex items-center gap-1">
                         <Calendar size={11} />
                         {exp.period}
@@ -139,7 +139,7 @@ export default function Experience() {
                     </div>
                   </div>
 
-                  <p className="text-gray-400 text-sm leading-relaxed mb-4">{exp.description}</p>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4">{exp.description}</p>
 
                   {/* Skill pills */}
                   <div className="flex flex-wrap gap-1.5">
@@ -162,8 +162,8 @@ export default function Experience() {
           viewport={{ once: true }}
         >
           <div className="flex items-center gap-3 mb-8">
-            <GraduationCap size={22} className="text-primary-400" />
-            <h3 className="text-2xl font-bold text-white">Education</h3>
+            <GraduationCap size={22} className="text-primary-500 dark:text-primary-400" />
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Education</h3>
           </div>
 
           <div className="grid sm:grid-cols-2 gap-4">
@@ -178,8 +178,8 @@ export default function Experience() {
               >
                 <span className="text-3xl mt-0.5">{edu.icon}</span>
                 <div>
-                  <p className="text-white font-semibold mb-1">{edu.degree}</p>
-                  <p className="text-gray-500 text-sm leading-relaxed">{edu.note}</p>
+                  <p className="text-gray-900 dark:text-white font-semibold mb-1">{edu.degree}</p>
+                  <p className="text-gray-600 dark:text-gray-500 text-sm leading-relaxed">{edu.note}</p>
                 </div>
               </motion.div>
             ))}

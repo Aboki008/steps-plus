@@ -36,6 +36,13 @@ html.dark body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* ─── Global Color Transition for Seamless Theme Toggle ─── */
+body, body *, body *::before, body *::after {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 400ms;
+}
+
 /* ─── Custom Scrollbar ───────────────────────────────────── */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: #f9fafb; }

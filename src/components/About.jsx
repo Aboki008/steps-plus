@@ -53,7 +53,7 @@ const About = () => (
         viewport={{ once: true }}
       >
         <span className="code-pill mb-4 inline-block">about_me.php</span>
-        <h2 className="section-heading text-white">
+        <h2 className="section-heading text-gray-900 dark:text-white">
           The Developer Behind The Code
         </h2>
       </motion.div>
@@ -67,23 +67,23 @@ const About = () => (
           transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
           viewport={{ once: true }}
         >
-          <p className="text-gray-300 text-lg leading-8 mb-6">
-            I'm a <span className="text-white font-semibold">Full Stack Developer</span> based in Nigeria, serving clients remotely. With 5+ years of hands-on experience, I specialize in robust backend systems (PHP, Laravel, Python, Next.js) while also building complete WordPress solutions and web platforms.
+          <p className="text-gray-600 dark:text-gray-300 text-lg leading-8 mb-6">
+            I'm a <span className="text-gray-900 dark:text-white font-semibold">Full Stack Developer</span> based in Nigeria, serving clients remotely. With 5+ years of hands-on experience, I specialize in robust backend systems (PHP, Laravel, Python, Next.js) while also building complete WordPress solutions and web platforms.
           </p>
-          <p className="text-gray-400 leading-7 mb-8">
-            My core is backend development, but my stack is fully production-ready end-to-end: PHP, Laravel, Python, Next.js, alongside WordPress and standard frontend technologies — the tools that actually ship. I'm currently pursuing an <span className="text-primary-400 font-medium">MSc in Software Engineering</span> to deepen my architecture and systems knowledge.
+          <p className="text-gray-600 dark:text-gray-400 leading-7 mb-8">
+            My core is backend development, but my stack is fully production-ready end-to-end: PHP, Laravel, Python, Next.js, alongside WordPress and standard frontend technologies — the tools that actually ship. I'm currently pursuing an <span className="text-primary-500 dark:text-primary-400 font-medium">MSc in Software Engineering</span> to deepen my architecture and systems knowledge.
           </p>
 
           {/* Contact chips */}
           <div className="flex flex-wrap gap-3">
             {[
-              { label: '📍 Nigeria (Remote)', style: 'border-gray-700 text-gray-400' },
-              { label: '📧 ashaoluolaitan@gmail.com', style: 'border-primary-500/30 text-primary-400' },
-              { label: '📱 07035858977', style: 'border-gray-700 text-gray-400' },
+              { label: '📍 Nigeria (Remote)', style: 'border-gray-300 dark:border-gray-700 text-gray-600 dark:text-gray-400' },
+              { label: '📧 ashaoluolaitan@gmail.com', style: 'border-primary-500/30 text-primary-600 dark:text-primary-400' },
+              { label: '📱 07035858977', style: 'border-gray-300 dark:border-gray-700 text-gray-600 dark:text-gray-400' },
             ].map(({ label, style }) => (
               <span
                 key={label}
-                className={`text-xs px-3 py-1.5 rounded-full border bg-dark-800/60 ${style} font-mono`}
+                className={`text-xs px-3 py-1.5 rounded-full border bg-gray-100/60 dark:bg-dark-800/60 ${style} font-mono`}
               >
                 {label}
               </span>
@@ -102,13 +102,13 @@ const About = () => (
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 viewport={{ once: true }}
-                className={`glass-card glass-card-hover p-5 border border-white/5 ${item.border} bg-gray-900/40`}
+                className={`glass-card glass-card-hover p-5 border border-gray-200 dark:border-white/5 ${item.border} bg-gray-50/40 dark:bg-gray-900/40`}
               >
-                <div className={`p-2.5 rounded-lg bg-dark-800/60 w-fit mb-3`}>
+                <div className={`p-2.5 rounded-lg bg-white dark:bg-dark-800/60 w-fit mb-3`}>
                   <Icon size={20} className={item.iconColor} />
                 </div>
-                <h3 className="text-white font-semibold text-sm mb-1">{item.label}</h3>
-                <p className="text-gray-500 text-xs leading-relaxed">{item.desc}</p>
+                <h3 className="text-gray-900 dark:text-white font-semibold text-sm mb-1">{item.label}</h3>
+                <p className="text-gray-600 dark:text-gray-500 text-xs leading-relaxed">{item.desc}</p>
               </motion.div>
             );
           })}
@@ -117,8 +117,7 @@ const About = () => (
 
       {/* Stats bar */}
       <motion.div
-        className="mt-20 grid grid-cols-3 gap-0 rounded-2xl overflow-hidden border border-white/6"
-        style={{ background: 'rgba(17,24,39,0.5)', backdropFilter: 'blur(20px)' }}
+        className="mt-20 grid grid-cols-3 gap-0 rounded-2xl overflow-hidden border border-gray-200 dark:border-white/6 bg-white/50 dark:bg-dark-800/50 backdrop-blur-[20px]"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
@@ -127,10 +126,10 @@ const About = () => (
         {stats.map((stat, i) => (
           <div
             key={stat.label}
-            className={`text-center py-10 px-6 ${i < stats.length - 1 ? 'border-r border-white/6' : ''}`}
+            className={`text-center py-10 px-6 ${i < stats.length - 1 ? 'border-r border-gray-200 dark:border-white/6' : ''}`}
           >
             <motion.div
-              className="text-4xl lg:text-5xl font-black text-primary-400 mb-2 leading-none"
+              className="text-4xl lg:text-5xl font-black text-primary-500 dark:text-primary-400 mb-2 leading-none"
               initial={{ opacity: 0, scale: 0.7 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: i * 0.15 }}
@@ -138,7 +137,7 @@ const About = () => (
             >
               {stat.value}{stat.suffix}
             </motion.div>
-            <p className="text-gray-500 text-sm font-medium">{stat.label}</p>
+            <p className="text-gray-600 dark:text-gray-500 text-sm font-medium">{stat.label}</p>
           </div>
         ))}
       </motion.div>

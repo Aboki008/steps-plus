@@ -42,7 +42,7 @@ const Header = ({ darkMode, setDarkMode }) => {
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? 'py-2 bg-dark-900/80 backdrop-blur-xl border-b border-white/5 shadow-lg shadow-black/20'
+          ? 'py-2 bg-white/80 dark:bg-dark-900/80 backdrop-blur-xl border-b border-gray-200 dark:border-white/5 shadow-lg shadow-black/5 dark:shadow-black/20'
           : 'py-4 bg-transparent'
       }`}
     >
@@ -72,7 +72,7 @@ const Header = ({ darkMode, setDarkMode }) => {
             </div>
             <div>
               <p
-                className="font-bold text-sm text-white leading-tight"
+                className="font-bold text-sm text-gray-900 dark:text-white leading-tight"
                 style={{ letterSpacing: '-0.01em' }}
               >
                 Olaitan Ashaolu
@@ -95,14 +95,14 @@ const Header = ({ darkMode, setDarkMode }) => {
                   transition={{ delay: i * 0.07 + 0.2 }}
                   className={`relative px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
                     isActive
-                      ? 'text-white'
-                      : 'text-gray-400 hover:text-white'
+                      ? 'text-primary-700 dark:text-primary-300'
+                      : 'text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white'
                   }`}
                 >
                   {isActive && (
                     <motion.div
                       layoutId="nav-pill"
-                      className="absolute inset-0 rounded-lg bg-white/8 border border-white/10"
+                      className="absolute inset-0 rounded-lg bg-primary-50 dark:bg-primary-500/10 border border-primary-200 dark:border-primary-500/20"
                       transition={{ type: 'spring', stiffness: 380, damping: 30 }}
                     />
                   )}
@@ -125,7 +125,7 @@ const Header = ({ darkMode, setDarkMode }) => {
               onClick={() => setDarkMode && setDarkMode(!darkMode)}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              className="w-9 h-9 rounded-lg flex items-center justify-center border border-white/8 bg-white/5 hover:bg-white/10 text-gray-400 hover:text-white transition-all duration-300"
+              className="w-9 h-9 rounded-lg flex items-center justify-center border border-gray-200 dark:border-white/8 bg-gray-100 dark:bg-white/5 hover:bg-gray-200 dark:hover:bg-white/10 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all duration-300"
               aria-label="Toggle theme"
             >
               <AnimatePresence mode="wait">
@@ -136,7 +136,7 @@ const Header = ({ darkMode, setDarkMode }) => {
                   exit={{ rotate: 90, opacity: 0 }}
                   transition={{ duration: 0.2 }}
                 >
-                  {darkMode ? <Sun size={16} className="text-yellow-400" /> : <Moon size={16} />}
+                  {darkMode ? <Sun size={16} className="text-yellow-500" /> : <Moon size={16} />}
                 </motion.div>
               </AnimatePresence>
             </motion.button>
@@ -159,7 +159,7 @@ const Header = ({ darkMode, setDarkMode }) => {
               onClick={() => setMobileOpen(!mobileOpen)}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="md:hidden w-9 h-9 rounded-lg flex items-center justify-center border border-white/8 bg-white/5 text-gray-400 hover:text-white transition-all duration-300"
+              className="md:hidden w-9 h-9 rounded-lg flex items-center justify-center border border-gray-200 dark:border-white/8 bg-gray-100 dark:bg-white/5 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all duration-300"
               aria-label="Toggle menu"
             >
               <AnimatePresence mode="wait">
@@ -193,12 +193,12 @@ const Header = ({ darkMode, setDarkMode }) => {
                     key={item.name}
                     href={item.href}
                     onClick={() => setMobileOpen(false)}
-                    className="block px-4 py-3 rounded-lg text-sm font-medium text-gray-300 hover:text-white hover:bg-white/6 transition-all duration-200"
+                    className="block px-4 py-3 rounded-lg text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-white/6 transition-all duration-200"
                   >
                     {item.name}
                   </a>
                 ))}
-                <div className="pt-2 border-t border-white/8">
+                <div className="pt-2 border-t border-gray-200 dark:border-white/8">
                   <a
                     href="#contact"
                     onClick={() => setMobileOpen(false)}

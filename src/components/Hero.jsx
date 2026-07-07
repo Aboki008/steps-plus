@@ -97,9 +97,9 @@ const Hero = ({ darkMode }) => {
             variants={itemVariants}
             className="text-5xl sm:text-7xl lg:text-8xl font-black tracking-tight mb-5 leading-none"
           >
-            <span className="text-white">Olaitan</span>
+            <span className="text-gray-900 dark:text-white">Olaitan</span>
             {' '}
-            <span className="text-primary-400">Ashaolu</span>
+            <span className="text-primary-500 dark:text-primary-400">Ashaolu</span>
           </motion.h1>
 
           {/* Animated role */}
@@ -107,7 +107,7 @@ const Hero = ({ darkMode }) => {
             variants={itemVariants}
             className="h-12 flex items-center justify-center mb-6"
           >
-            <span className="text-dark-600 dark:text-gray-500 font-mono text-lg sm:text-xl mr-2 select-none">&gt;</span>
+            <span className="text-gray-400 dark:text-gray-500 font-mono text-lg sm:text-xl mr-2 select-none">&gt;</span>
             <AnimatePresence mode="wait">
               <motion.span
                 key={roleIdx}
@@ -115,7 +115,7 @@ const Hero = ({ darkMode }) => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
                 transition={{ duration: 0.35, ease: 'easeOut' }}
-                className="text-xl sm:text-2xl font-semibold text-primary-400"
+                className="text-xl sm:text-2xl font-semibold text-primary-500 dark:text-primary-400"
                 style={{ fontFamily: "'JetBrains Mono', monospace" }}
               >
                 {ROLES[roleIdx]}
@@ -130,12 +130,12 @@ const Hero = ({ darkMode }) => {
           {/* Hook line */}
           <motion.p
             variants={itemVariants}
-            className="text-gray-400 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed mb-10"
+            className="text-gray-600 dark:text-gray-400 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed mb-10"
           >
             I build systems that{' '}
-            <span className="text-white font-semibold">perform</span>,{' '}
-            <span className="text-white font-semibold">scale</span>, and{' '}
-            <span className="text-white font-semibold">convert</span>.
+            <span className="text-gray-900 dark:text-white font-semibold">perform</span>,{' '}
+            <span className="text-gray-900 dark:text-white font-semibold">scale</span>, and{' '}
+            <span className="text-gray-900 dark:text-white font-semibold">convert</span>.
             {' '}From robust backends to complete full stack platforms — delivered remotely, on time, every time.
           </motion.p>
 
@@ -213,12 +213,12 @@ const Hero = ({ darkMode }) => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1.2 + i * 0.1 }}
               >
-                <Icon size={18} className="text-gray-400 hover:text-primary-400 transition-colors" />
+                <Icon size={18} className="text-gray-500 dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-400 transition-colors" />
               </motion.a>
             ))}
 
-            <div className="h-px w-12 bg-gray-700" />
-            <span className="text-gray-500 text-sm font-mono">Open to Remote</span>
+            <div className="h-px w-12 bg-gray-300 dark:bg-gray-700" />
+            <span className="text-gray-600 dark:text-gray-500 text-sm font-mono">Open to Remote</span>
           </motion.div>
         </motion.div>
 
@@ -229,9 +229,9 @@ const Hero = ({ darkMode }) => {
           transition={{ delay: 2.2 }}
           className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
         >
-          <span className="text-xs text-gray-600 font-mono tracking-widest uppercase">Scroll</span>
+          <span className="text-xs text-gray-500 dark:text-gray-600 font-mono tracking-widest uppercase">Scroll</span>
           <motion.div
-            className="w-5 h-9 rounded-full border border-gray-700 flex justify-center pt-1.5"
+            className="w-5 h-9 rounded-full border border-gray-400 dark:border-gray-700 flex justify-center pt-1.5"
             animate={{ borderColor: ['rgba(75,85,99,0.6)', 'rgba(14,165,233,0.6)', 'rgba(75,85,99,0.6)'] }}
             transition={{ duration: 2, repeat: Infinity }}
           >
@@ -266,7 +266,7 @@ const Hero = ({ darkMode }) => {
             >
               <button
                 onClick={() => setIsModalOpen(false)}
-                className="absolute top-4 right-4 text-gray-500 hover:text-white transition-colors"
+                className="absolute top-4 right-4 text-gray-500 hover:text-gray-900 dark:hover:text-white transition-colors"
               >
                 <X size={18} />
               </button>
@@ -276,12 +276,12 @@ const Hero = ({ darkMode }) => {
                   <MessageCircle size={20} className="text-green-400" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-white text-lg leading-tight">Let's Talk</h3>
-                  <p className="text-gray-400 text-xs">Fastest response on WhatsApp</p>
+                  <h3 className="font-bold text-gray-900 dark:text-white text-lg leading-tight">Let's Talk</h3>
+                  <p className="text-gray-500 dark:text-gray-400 text-xs">Fastest response on WhatsApp</p>
                 </div>
               </div>
 
-              <p className="text-gray-300 text-sm mb-5 leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-300 text-sm mb-5 leading-relaxed">
                 Need a robust backend, full stack application, or WordPress solution? I typically reply within 2 hours during business hours.
               </p>
 
@@ -299,7 +299,7 @@ const Hero = ({ darkMode }) => {
                 </motion.a>
                 <a
                   href="mailto:ashaoluolaitan@gmail.com"
-                  className="flex items-center justify-center gap-2 border border-gray-700 hover:border-primary-500/50 text-gray-300 hover:text-white py-2.5 rounded-lg font-medium transition-all text-sm"
+                  className="flex items-center justify-center gap-2 border border-gray-300 dark:border-gray-700 hover:border-primary-500/50 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white py-2.5 rounded-lg font-medium transition-all text-sm"
                 >
                   <Mail size={16} />
                   Send Email Instead

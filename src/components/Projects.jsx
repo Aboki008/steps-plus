@@ -12,14 +12,15 @@ const TAG_COLORS = {
   'AI':            'bg-purple-500/15 text-purple-300 border-purple-500/30',
   'DeepSeek API':  'bg-violet-500/15 text-violet-300 border-violet-500/30',
   'Gemini API':    'bg-orange-500/15 text-orange-300 border-orange-500/30',
-  'Vercel':        'bg-white/10 text-gray-200 border-white/15',
+  'Vercel':        'bg-gray-200/50 dark:bg-white/10 text-gray-700 dark:text-gray-200 border-gray-300 dark:border-white/15',
   'WordPress':     'bg-blue-600/15 text-blue-300 border-blue-600/30',
   'Supabase':      'bg-emerald-500/15 text-emerald-300 border-emerald-500/30',
   'Bootstrap':     'bg-purple-600/15 text-purple-300 border-purple-600/30',
+  'Python':        'bg-yellow-500/15 text-yellow-300 border-yellow-500/30',
 };
 
 const getTagClass = (tag) =>
-  TAG_COLORS[tag] || 'bg-dark-700/60 text-gray-400 border-white/10';
+  TAG_COLORS[tag] || 'bg-gray-100 dark:bg-dark-700/60 text-gray-600 dark:text-gray-400 border-gray-200 dark:border-white/10';
 
 const PROJECTS = [
   // 1. React / AI
@@ -28,8 +29,8 @@ const PROJECTS = [
     badge:    { label: 'AI + React', icon: Bot },
     title:    'Peerwise — AI Manuscript Critic',
     description:
-      'AI-assisted manuscript review platform for academic writing, research feedback, and editorial support. Integrates DeepSeek, Gemini, and Perplexity APIs for real-time critique and research-aware suggestions.',
-    tags:     ['React', 'Next.js', 'AI', 'DeepSeek API', 'Gemini API', 'Vercel'],
+      'AI-assisted manuscript review platform for academic writing, research feedback, and editorial support. Integrates DeepSeek, Gemini, and Perplexity APIs for real-time critique and research-aware suggestions. Backend built with Python.',
+    tags:     ['React', 'Next.js', 'Tailwind CSS', 'AI', 'DeepSeek API', 'Gemini API', 'Python', 'Vercel'],
     link:     'https://peerwise.vercel.app/',
     gradient: 'from-violet-600 via-purple-600 to-blue-600',
     accent:   'border-violet-500/40',
@@ -85,7 +86,7 @@ const PROJECTS = [
     title:    'TalentDev — Online Exams & CBT Platform',
     description:
       'AI-assisted CBT, online exams, assessment, and awarding platform for learners and training organisations. Includes exam workflows, learner records, result management, and AI-powered assessment guidance via DeepSeek and Gemini APIs.',
-    tags:     ['React', 'Next.js', 'AI', 'DeepSeek API', 'Gemini API', 'Supabase'],
+    tags:     ['React', 'Next.js', 'Tailwind CSS', 'AI', 'DeepSeek API', 'Gemini API', 'Supabase'],
     link:     'https://www.talentdev.online/',
     gradient: 'from-emerald-600 via-teal-500 to-cyan-500',
     accent:   'border-emerald-500/40',
@@ -100,7 +101,7 @@ const PROJECTS = [
     title:    'Educational Institution Website',
     description:
       'Dynamic educational website built with Laravel PHP, featuring structured content pages, responsive layout, and easy navigation for a Nigerian vocational school.',
-    tags:     ['PHP', 'Laravel', 'MySQL'],
+    tags:     ['PHP', 'Laravel', 'MySQL', 'Tailwind CSS'],
     link:     'https://fcahptvom.sch.ng/',
     gradient: 'from-purple-600 to-pink-500',
     accent:   'border-purple-500/40',
@@ -128,7 +129,7 @@ const PROJECTS = [
     title:    'Cooperative Finance Platform',
     description:
       'Loan and savings management system with member records, financial transactions, and reporting dashboards for a cooperative society.',
-    tags:     ['PHP', 'MySQL'],
+    tags:     ['PHP', 'MySQL', 'Tailwind CSS'],
     link:     'https://ictls.com.ng/',
     gradient: 'from-green-600 to-emerald-500',
     accent:   'border-green-500/40',
@@ -188,10 +189,10 @@ export default function Projects() {
           viewport={{ once: true }}
         >
           <span className="code-pill mb-4 inline-block">featured_work.jsx</span>
-          <h2 className="section-heading text-white mb-4">
+          <h2 className="section-heading text-gray-900 dark:text-white mb-4">
             What I've Shipped
           </h2>
-          <p className="text-gray-400 text-lg max-w-xl">
+          <p className="text-gray-600 dark:text-gray-400 text-lg max-w-xl">
             From AI-powered React apps to robust PHP platforms — real projects, real impact.
           </p>
         </motion.div>
@@ -211,14 +212,14 @@ export default function Projects() {
               className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 border ${
                 filter === id
                   ? 'bg-primary-500/20 border-primary-500/50 text-primary-300'
-                  : 'bg-dark-800/40 border-white/8 text-gray-400 hover:text-white hover:border-white/20'
+                  : 'bg-gray-100 dark:bg-dark-800/40 border-gray-200 dark:border-white/8 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:border-gray-300 dark:hover:border-white/20'
               }`}
             >
               <Icon size={14} />
               {label}
               <span
                 className={`text-xs px-1.5 py-0.5 rounded-full ${
-                  filter === id ? 'bg-primary-500/30 text-primary-200' : 'bg-dark-700 text-gray-500'
+                  filter === id ? 'bg-primary-500/30 text-primary-200' : 'bg-gray-200 dark:bg-dark-700 text-gray-600 dark:text-gray-500'
                 }`}
               >
                 {id === 'all' ? PROJECTS.length : PROJECTS.filter(p => p.category === id).length}
@@ -264,7 +265,7 @@ export default function Projects() {
                 <motion.article
                   key={project.title}
                   variants={itemVariants}
-                  className="group relative flex flex-col glass-card border border-white/5 overflow-hidden card-glow"
+                  className="group relative flex flex-col glass-card border border-gray-200 dark:border-white/5 overflow-hidden card-glow"
                   style={{ '--glow-color': project.glow }}
                 >
                   {/* ── Top bar ─── */}
@@ -276,7 +277,7 @@ export default function Projects() {
                   <div className="p-6 pb-4">
                     <div className="flex items-start justify-between mb-3">
                       {/* Category badge */}
-                      <span className="flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-wider text-gray-500 bg-dark-800/60 border border-white/6 px-2.5 py-1 rounded-md">
+                      <span className="flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-wider text-gray-600 dark:text-gray-500 bg-gray-100 dark:bg-dark-800/60 border border-gray-200 dark:border-white/6 px-2.5 py-1 rounded-md">
                         <BadgeIcon size={11} />
                         {project.badge.label}
                       </span>
@@ -290,18 +291,18 @@ export default function Projects() {
                       )}
                     </div>
 
-                    <h3 className="text-lg font-bold text-white leading-snug mb-2 group-hover:text-primary-400 transition-colors duration-300">
+                    <h3 className="text-lg font-bold text-gray-900 dark:text-white leading-snug mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors duration-300">
                       {project.title}
                     </h3>
 
-                    <p className="text-gray-400 text-sm leading-relaxed line-clamp-3 mb-4">
+                    <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed line-clamp-3 mb-4">
                       {project.description}
                     </p>
 
                     {/* Key features */}
                     <ul className="space-y-1 mb-5">
                       {project.features.map(f => (
-                        <li key={f} className="flex items-center gap-2 text-xs text-gray-500">
+                        <li key={f} className="flex items-center gap-2 text-xs text-gray-600 dark:text-gray-500">
                           <span className="w-1.5 h-1.5 rounded-full flex-shrink-0 bg-primary-400" />
                           {f}
                         </li>
@@ -322,7 +323,7 @@ export default function Projects() {
                   </div>
 
                   {/* ── Card footer CTA ─── */}
-                  <div className="mt-auto px-6 pb-6 pt-2 border-t border-white/5">
+                  <div className="mt-auto px-6 pb-6 pt-2 border-t border-gray-200 dark:border-white/5">
                     {project.link ? (
                       <motion.a
                         href={project.link}
@@ -336,7 +337,7 @@ export default function Projects() {
                         Visit Live Site
                       </motion.a>
                     ) : (
-                      <div className="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg text-sm text-gray-600 border border-white/6">
+                      <div className="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg text-sm text-gray-600 border border-gray-200 dark:border-white/6">
                         Private Project
                       </div>
                     )}

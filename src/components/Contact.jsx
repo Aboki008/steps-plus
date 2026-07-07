@@ -39,7 +39,7 @@ const CHANNELS = [
     href:    'https://github.com/Aboki008/steps-plus',
     accent:  'border-gray-500/30',
     iconBg:  'bg-gray-500/15',
-    iconCol: 'text-gray-300',
+    iconCol: 'text-gray-600 dark:text-gray-300',
     btnCls:  'bg-gray-700 hover:bg-gray-600 text-white',
     cta:     'View GitHub',
     external: true,
@@ -80,12 +80,12 @@ export default function Contact() {
             viewport={{ once: true }}
           >
             <span className="code-pill mb-4 inline-block">contact.php</span>
-            <h2 className="section-heading text-white mb-4">
+            <h2 className="section-heading text-gray-900 dark:text-white mb-4">
               Let's Work Together
             </h2>
-            <p className="text-gray-400 text-lg max-w-xl mx-auto">
+            <p className="text-gray-600 dark:text-gray-400 text-lg max-w-xl mx-auto">
               Open to robust backend systems, full-stack builds, and WordPress projects.
-              I respond within <span className="text-white font-semibold">24 hours</span> — usually much faster.
+              I respond within <span className="text-gray-900 dark:text-white font-semibold">24 hours</span> — usually much faster.
             </p>
           </motion.div>
 
@@ -100,14 +100,14 @@ export default function Contact() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.55, delay: i * 0.1 }}
                   viewport={{ once: true }}
-                  className={`glass-card border ${ch.accent} bg-gray-900/40 p-6 glass-card-hover flex flex-col`}
+                  className={`glass-card border ${ch.accent} bg-gray-50/40 dark:bg-gray-900/40 p-6 glass-card-hover flex flex-col`}
                 >
                   <div className={`p-3 ${ch.iconBg} rounded-xl w-fit mb-4`}>
                     <Icon size={22} className={ch.iconCol} />
                   </div>
-                  <p className="text-white font-bold text-lg mb-1">{ch.label}</p>
-                  <p className="text-gray-400 text-sm mb-1 font-mono">{ch.detail}</p>
-                  <p className="text-gray-600 text-xs mb-5">{ch.note}</p>
+                  <p className="text-gray-900 dark:text-white font-bold text-lg mb-1">{ch.label}</p>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm mb-1 font-mono">{ch.detail}</p>
+                  <p className="text-gray-500 dark:text-gray-600 text-xs mb-5">{ch.note}</p>
                   <div className="mt-auto">
                     <motion.a
                       href={ch.href}
@@ -128,7 +128,7 @@ export default function Contact() {
 
           {/* ── Bottom row: email copy + socials ────────────── */}
           <motion.div
-            className="flex flex-col sm:flex-row items-center justify-between gap-6 pt-10 border-t border-white/6"
+            className="flex flex-col sm:flex-row items-center justify-between gap-6 pt-10 border-t border-gray-200 dark:border-white/6"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6 }}
@@ -138,7 +138,7 @@ export default function Contact() {
             <div className="flex items-center gap-3">
               <button
                 onClick={copyEmail}
-                className="flex items-center gap-2 text-sm font-mono text-gray-400 hover:text-white border border-white/10 hover:border-white/25 px-4 py-2 rounded-lg transition-all duration-200"
+                className="flex items-center gap-2 text-sm font-mono text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white border border-gray-200 dark:border-white/10 hover:border-gray-300 dark:hover:border-white/25 px-4 py-2 rounded-lg transition-all duration-200"
               >
                 <Mail size={14} />
                 ashaoluolaitan@gmail.com
@@ -170,7 +170,7 @@ export default function Contact() {
                   whileTap={{ scale: 0.92 }}
                   aria-label={label}
                 >
-                  <Icon size={16} className="text-gray-400" />
+                  <Icon size={16} className="text-gray-600 dark:text-gray-400" />
                 </motion.a>
               ))}
             </div>
@@ -193,14 +193,14 @@ export default function Contact() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-white/5 py-8">
+      <footer className="border-t border-gray-200 dark:border-white/5 py-8">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-gray-600 text-sm">
+          <p className="text-gray-500 dark:text-gray-600 text-sm">
             © {new Date().getFullYear()} Olaitan Ashaolu. Built with React & Framer Motion.
           </p>
           <a
             href="#home"
-            className="text-xs text-gray-600 hover:text-primary-400 transition-colors font-mono"
+            className="text-xs text-gray-500 dark:text-gray-600 hover:text-primary-600 dark:hover:text-primary-400 transition-colors font-mono"
           >
             Back to top ↑
           </a>
