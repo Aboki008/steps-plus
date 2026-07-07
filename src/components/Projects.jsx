@@ -189,8 +189,7 @@ export default function Projects() {
         >
           <span className="code-pill mb-4 inline-block">featured_work.jsx</span>
           <h2 className="section-heading text-white mb-4">
-            What I've{' '}
-            <span className="text-primary-400">shipped</span>
+            What I've Shipped
           </h2>
           <p className="text-gray-400 text-lg max-w-xl">
             From AI-powered React apps to robust PHP platforms — real projects, real impact.

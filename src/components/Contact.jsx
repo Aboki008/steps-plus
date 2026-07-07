@@ -81,8 +81,7 @@ export default function Contact() {
           >
             <span className="code-pill mb-4 inline-block">contact.php</span>
             <h2 className="section-heading text-white mb-4">
-              Let's{' '}
-              <span className="text-primary-400">work together</span>
+              Let's Work Together
             </h2>
             <p className="text-gray-400 text-lg max-w-xl mx-auto">
               Open to robust backend systems, full-stack builds, and WordPress projects.

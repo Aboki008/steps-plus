@@ -79,8 +79,7 @@ export default function Skills() {
         >
           <span className="code-pill mb-4 inline-block">skills.config.js</span>
           <h2 className="section-heading text-white">
-            Technical{' '}
-            <span className="text-primary-400">arsenal</span>
+            Technical Arsenal
           </h2>
           <p className="text-gray-400 text-lg mt-3 max-w-xl">
             Production-tested tools and frameworks — from CMS builds to AI integrations.

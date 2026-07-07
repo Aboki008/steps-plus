@@ -84,8 +84,7 @@ export default function Experience() {
         >
           <span className="code-pill mb-4 inline-block">experience.json</span>
           <h2 className="section-heading text-white">
-            Career{' '}
-            <span className="text-primary-400">journey</span>
+            Career Journey
           </h2>
         </motion.div>
 

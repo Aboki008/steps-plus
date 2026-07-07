@@ -54,8 +54,7 @@ const About = () => (
       >
         <span className="code-pill mb-4 inline-block">about_me.php</span>
         <h2 className="section-heading text-white">
-          The developer behind<br />
-          <span className="text-primary-400">the code</span>
+          The Developer Behind The Code
         </h2>
       </motion.div>
 
