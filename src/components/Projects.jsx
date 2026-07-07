@@ -15,6 +15,7 @@ const TAG_COLORS = {
   'Vercel':        'bg-white/10 text-gray-200 border-white/15',
   'WordPress':     'bg-blue-600/15 text-blue-300 border-blue-600/30',
   'Supabase':      'bg-emerald-500/15 text-emerald-300 border-emerald-500/30',
+  'Bootstrap':     'bg-purple-600/15 text-purple-300 border-purple-600/30',
 };
 
 const getTagClass = (tag) =>
@@ -133,6 +134,20 @@ const PROJECTS = [
     accent:   'border-green-500/40',
     glow:     'rgba(34,197,94,0.12)',
     features: ['Member Records', 'Loan Management', 'Financial Reports'],
+  },
+  // 9. PHP / Bootstrap
+  {
+    category: 'php',
+    badge:    { label: 'PHP + Bootstrap', icon: Code2 },
+    title:    'PlasuJalis — Journal Publishing Platform',
+    description:
+      'Journal publishing website for academic and literary studies. Built with PHP and Bootstrap, featuring manuscript submission, peer review workflows, and editorial management.',
+    tags:     ['PHP', 'Bootstrap', 'MySQL'],
+    link:     'https://plasujalis.com/',
+    gradient: 'from-amber-600 to-orange-500',
+    accent:   'border-amber-500/40',
+    glow:     'rgba(245,158,11,0.12)',
+    features: ['Journal Publishing', 'Peer Review', 'Editorial Management'],
   },
 ];
 
