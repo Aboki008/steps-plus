@@ -2,34 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Global customizations */
-:root{
-	--primary: theme('colors.primary.500');
-}
-
-html, body, #root {
-	height: 100%;
-	overflow-x: hidden;
-}
-
-body {
-	@apply bg-neutral-900 text-gray-100 antialiased;
-	font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-}
-
-.container {
-	max-width: 1200px;
-}
-
-/* Utility: subtle section background */
-.section-card {
-	@apply bg-neutral-800/40 backdrop-blur rounded-2xl border border-neutral-800;
-}
-
-.btn-primary {
-	@apply bg-primary text-white px-6 py-2 rounded-lg font-semibold shadow-md hover:bg-primary-600 transition-all;
-}
-
-.muted {
-	@apply text-gray-400;
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    color: white;
 }
