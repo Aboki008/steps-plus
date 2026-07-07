@@ -106,8 +106,8 @@ const PROJECTS = [
     badge:    { label: 'Education', icon: Globe },
     title:    'Educational Institution Website',
     description:
-      'Dynamic educational website built with Laravel PHP, featuring structured content pages, responsive layout, and easy navigation for a Nigerian vocational school, including Monnify fee payments.',
-    tags:     ['PHP', 'Laravel', 'MySQL', 'Tailwind CSS', 'Monnify'],
+      'Dynamic educational website built with Laravel PHP, featuring structured content pages and AI-assisted features powered by DeepSeek. Includes comprehensive fee payment integrations using Monnify, Paystack, and Remita, deployed with Cloudflare.',
+    tags:     ['PHP', 'Laravel', 'MySQL', 'Tailwind CSS', 'Monnify', 'Paystack', 'Remita', 'DeepSeek API', 'Cloudflare'],
     link:     'https://fcahptvom.sch.ng/',
     gradient: 'from-purple-600 to-pink-500',
     accent:   'border-purple-500/40',
