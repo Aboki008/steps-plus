@@ -57,6 +57,7 @@ const SKILL_CATEGORIES = [
 const EXTRA_TOOLS = [
   'cPanel', 'Git', 'Google Workspace', 'Canva', 'CapCut',
   'Figma', 'Perplexity API', 'VS Code', 'Netlify', 'CI/CD',
+  'Antigravity', 'DevinAI', 'Windsurf', 'Roo', 'Cline',
 ];
 
 export default function Skills() {
