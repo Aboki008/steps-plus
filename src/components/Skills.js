@@ -28,36 +28,44 @@ const Skills = () => {
 
   const skillCategories = [
     {
-      title: "Frontend",
+      title: "WordPress & CMS",
       skills: [
-  { name: "React", level: 95, icon: reactIcon },
-  { name: "Next.js", level: 90, icon: nextjsIcon },
-  { name: "TypeScript", level: 88, icon: typescriptIcon },
-  { name: "Tailwind CSS", level: 92, icon: tailwindIcon },
-  { name: "HTML/CSS", level: 98, icon: htmlIcon },
+  { name: "WordPress", level: 95, icon: "🔧" },
+  { name: "Content Management", level: 90, icon: "📝" },
+  { name: "Website Management", level: 92, icon: "🌐" },
+  { name: "Page Structuring", level: 88, icon: "📄" },
       ]
     },
     {
-      title: "Backend",
+      title: "Web Development",
       skills: [
   { name: "PHP", level: 92, icon: phpIcon },
-  { name: "Laravel", level: 88, icon: laravelIcon },
   { name: "MySQL", level: 90, icon: mysqlIcon },
-  { name: "Node.js", level: 82, icon: nodejsIcon },
-  { name: "REST APIs", level: 90, icon: "🔗" },
+  { name: "HTML5", level: 95, icon: htmlIcon },
+  { name: "CSS3", level: 92, icon: "🎨" },
+  { name: "JavaScript", level: 85, icon: "⚡" },
+  { name: "Tailwind CSS", level: 88, icon: tailwindIcon },
       ]
     },
     {
-      title: "Tools & Others",
+      title: "Backend & Security",
       skills: [
-  { name: "Git", level: 90, icon: gitIcon },
-  { name: "Docker", level: 75, icon: dockerIcon },
-  { name: "AWS", level: 70, icon: awsIcon },
-  { name: "Figma", level: 85, icon: figmaIcon },
-  { name: "AI", level: 80, icon: aiIcon },
-  { name: "VSCode", level: 95, icon: vscodeIcon },
-  { name: "Cursor", level: 70, icon: cursorIcon },
-  { name: "WindSurf", level: 60, icon: windsurfIcon },
+  { name: "Secure Forms", level: 90, icon: "🔒" },
+  { name: "User Sessions", level: 88, icon: "👤" },
+  { name: "Input Validation", level: 92, icon: "✅" },
+  { name: "CSRF Protection", level: 85, icon: "🛡️" },
+  { name: "PHPMailer", level: 82, icon: "📧" },
+      ]
+    },
+    {
+      title: "Deployment & Tools",
+      skills: [
+  { name: "cPanel", level: 90, icon: "🖥️" },
+  { name: "Vercel", level: 88, icon: "▲" },
+  { name: "Git", level: 85, icon: gitIcon },
+  { name: "Google Workspace", level: 80, icon: "📊" },
+  { name: "Canva", level: 85, icon: "🎨" },
+  { name: "CapCut", level: 75, icon: "🎬" },
       ]
     }
   ];

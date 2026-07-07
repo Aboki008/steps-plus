@@ -5,105 +5,55 @@ import { ExternalLink } from 'lucide-react';
 export default function Projects() {
 const projects = [
   {
-    title: 'PLASUJHS - International Journal of Academic Research (Health Sciences)',
-    description: 'A peer-reviewed academic journal platform publishing innovative research across multiple disciplines. Features manuscript submission, review system, and scholarly publication management.',
-    tags: ['Academic Publishing', 'Peer Review', 'Research Platform', 'PHP', 'MySQL'],
-    gradient: 'from-blue-500 to-cyan-500',
-    link: 'http://plasujhs.com.ng/',
-    github: '#',
-    category: 'Academic Journal',
-    features: ['Manuscript Submission', 'Peer Review System', 'Academic Publishing', 'Research Database']
-  },
-  {
-  title: 'Integrity Cooperative Savings & Loans',
-  description: 'A trusted cooperative platform providing secure savings plans and accessible loan services. Designed to empower members through financial inclusion, transparent operations, and sustainable wealth growth.',
-  tags: ['Cooperative Society', 'Savings & Loans', 'Financial Services', 'Member Empowerment', 'Nigeria'],
-  gradient: 'from-green-600 to-emerald-500',
-  link: 'https://ictls.com.ng/',
-  github: '#',
-  category: 'Cooperative Finance',
-  features: ['Member Registration', 'Savings Contributions', 'Loan Application & Approval', 'Financial Transparency']
-},
-  {
-    title: 'PLASUJHS - International Journal of Academic Research (Health Sciences)',
-    description: 'A peer-reviewed academic journal platform publishing innovative research across multiple disciplines. Features manuscript submission, review system, and scholarly publication management.',
-    tags: ['Academic Publishing', 'Peer Review', 'Research Platform', 'PHP', 'MySQL'],
+    title: 'Journal Publishing Platform',
+    description: 'Full journal management system with author, reviewer, and admin workflows.',
+    tags: ['Academic Publishing', 'Peer Review', 'PHP', 'MySQL'],
     gradient: 'from-blue-500 to-cyan-500',
     link: 'https://plasujer.com.ng/',
     github: '#',
     category: 'Academic Journal',
-    features: ['Manuscript Submission', 'Peer Review System', 'Academic Publishing', 'Research Database']
+    features: ['Manuscript Submission', 'Peer Review System', 'Admin Workflows']
   },
   {
-    title: 'IJSAR - International Journal of Scientific and Academic Research',
-    description: 'A peer-reviewed academic journal platform publishing innovative research across multiple disciplines. Features manuscript submission, review system, and scholarly publication management.',
-    tags: ['Academic Publishing', 'Peer Review', 'Research Platform', 'PHP', 'MySQL'],
+    title: 'Academic Journal Platform',
+    description: 'Structured editorial and review system with role-based administration.',
+    tags: ['Academic Publishing', 'Research Platform', 'PHP', 'MySQL'],
     gradient: 'from-blue-500 to-cyan-500',
-    link: 'https://ijsar.org/',
+    link: 'https://plasujhs.com.ng/',
     github: '#',
     category: 'Academic Journal',
-    features: ['Manuscript Submission', 'Peer Review System', 'Academic Publishing', 'Research Database']
+    features: ['Editorial System', 'Role-based Admin', 'Review Management']
   },
   {
-  title: 'CRCCM - Faith Based Organization Website',
-  description: 'A comprehensive website for a faith-based organization featuring sermon archives, event management, donation system, and community engagement tools to connect members and spread their mission online.',
-  tags: ['Religious Organization', 'Community Platform', 'Event Management', 'React', 'Node.js'],
-  gradient: 'from-blue-500 to-indigo-500',
-  link: 'https://crcmm-website.vercel.app/',
-  github: '#',
-  category: 'Faith-Based Platform',
-  features: ['Sermon Archives', 'Event Calendar', 'Donation System', 'Member Community']
-},
+    title: 'Cooperative Finance Platform',
+    description: 'Loan and savings management system with member records, transactions, and financial reports.',
+    tags: ['Cooperative Society', 'Financial Services', 'PHP', 'MySQL'],
+    gradient: 'from-green-600 to-emerald-500',
+    link: 'https://ictls.com.ng/',
+    github: '#',
+    category: 'Cooperative Finance',
+    features: ['Member Records', 'Loan Management', 'Financial Reports']
+  },
   {
-    title: 'Plasulj - Plateau State University Journal',
-    description: 'Academic journal platform for Plateau State University, facilitating scholarly publications, research dissemination, and academic community engagement with modern digital infrastructure.',
-    tags: ['University Journal', 'Research Dissemination', 'Academic Platform', 'PHP', 'MySQL'],
+    title: 'Educational Institution Website',
+    description: 'Dynamic educational website with structured pages and easy navigation.',
+    tags: ['Education Platform', 'Content Management', 'PHP', 'MySQL'],
     gradient: 'from-purple-500 to-pink-500',
-    link: 'https://plasulj.com.ng/',
+    link: 'https://fcahptvom.sch.ng/',
     github: '#',
-    category: 'University Journal',
-    features: ['Scholarly Publications', 'University Research', 'Academic Community', 'Digital Archives']
+    category: 'Education Platform',
+    features: ['Structured Pages', 'Easy Navigation', 'Content Management']
   },
   {
-    title: 'PlasuJalis - Journal of Academic and Literary Studies',
-    description: 'Multidisciplinary academic journal platform focusing on literary studies, humanities, and social sciences research with comprehensive publication management and digital archiving.',
-    tags: ['Literary Journal', 'Humanities Research', 'Academic Publishing', 'PHP', 'MySQL'],
-    gradient: 'from-green-500 to-emerald-500',
-    link: 'https://plasujalis.com/',
+    title: 'Portfolio Website',
+    description: 'Responsive portfolio showing web projects, skills, and technical capability.',
+    tags: ['Portfolio', 'React', 'Tailwind CSS', 'Vercel'],
+    gradient: 'from-purple-500 to-pink-500',
+    link: 'https://steps-plus.vercel.app/',
     github: '#',
-    category: 'Literary Journal',
-    features: ['Literary Research', 'Humanities Scholarship', 'Multidisciplinary Studies', 'Digital Archiving']
-  },
-  {
-  title: 'FCAHPT Vom - Federal College Website',
-  description: 'A comprehensive website for a federal college featuring blog, management,  Student system, and community engagement tools to keep the public informed.',
-  tags: ['Educational Organization', 'College Platform', 'Student Management', 'React', 'Node.js'],
-  gradient: 'from-blue-500 to-indigo-500',
-  link: 'https://fcahptvom.sch.ng/',
-  github: '#',
-  category: 'Education Platform',
-  features: ['News & Announcements', 'Admissions Information', 'Student Resources', 'Content Management']
-},
-{
-  title: 'Steps Plus - Portfolio Website',
-  description: 'Modern, responsive portfolio website showcasing creative work and professional services with elegant design, smooth animations, and optimized user experience for maximum engagement and conversion.',
-  tags: ['Portfolio', 'Creative Design', 'Responsive', 'React', 'Tailwind CSS'],
-  gradient: 'from-purple-500 to-pink-500',
-  link: 'https://steps-plus.vercel.app/',
-  github: '#',
-  category: 'Portfolio Website',
-  features: ['Responsive Design', 'Project Showcase', 'Contact Integration', 'Performance Optimized']
-},
-{
-  title: 'The Tropical Journal - Academic Research Platform',
-  description: 'Digital academic journal platform for publishing tropical research studies, featuring manuscript submission, peer review workflow, and open-access publication system for global research dissemination.',
-  tags: ['Academic Journal', 'Research Platform', 'Peer Review', 'PHP', 'MySQL'],
-  gradient: 'from-green-500 to-emerald-500',
-  link: 'https://thetropicaljournal.org/',
-  github: '#',
-  category: 'Academic Journal',
-  features: ['Manuscript Submission', 'Peer Review System', 'Open Access', 'Research Database']
-}
+    category: 'Portfolio Website',
+    features: ['Responsive Design', 'Project Showcase', 'Skills Display']
+  }
 ];
 
   const normalizedProjects = projects

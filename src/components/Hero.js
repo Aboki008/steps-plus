@@ -26,7 +26,7 @@ const Hero = ({ darkMode }) => {
 
   // Modal state for quick contact
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const whatsappNumber = '+2348114580007';
+  const whatsappNumber = '07035858977';
   const whatsappLink = `https://wa.me/${whatsappNumber.replace(/\D/g, '')}?text=Hi!%20I%20would%20like%20to%20connect%20with%20you.`;
 
   const openModal = (social) => {
@@ -79,7 +79,7 @@ const Hero = ({ darkMode }) => {
           >
             <div className="w-2 h-2 bg-primary-500 rounded-full mr-2 animate-pulse" />
             <span className="text-primary-500 font-medium">
-              Senior Full Stack Developer
+              WordPress Developer
             </span>
           </motion.div>
 
@@ -88,7 +88,7 @@ const Hero = ({ darkMode }) => {
             variants={itemVariants}
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6"
           >
-            Building Digital
+            OLAITAN
             <motion.span
               className="block bg-gradient-to-r from-primary-500 to-primary-300 bg-clip-text text-transparent"
               animate={{ 
@@ -103,7 +103,7 @@ const Hero = ({ darkMode }) => {
                 backgroundSize: '200% 200%'
               }}
             >
-              Experiences
+              ASHAOLU
             </motion.span>
           </motion.h1>
 
@@ -112,10 +112,7 @@ const Hero = ({ darkMode }) => {
             variants={itemVariants}
             className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-400 mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed px-2 text-justify"
           >
-            Senior Developer specializing in <span className="text-primary-400 font-semibold">React</span>, 
-            <span className="text-primary-400 font-semibold"> Next.js</span>, and 
-            <span className="text-primary-400 font-semibold"> Full Stack</span> solutions. 
-            Passionate about creating scalable, performant applications.
+            WordPress Developer | PHP Web Administrator | Remote CMS Support
           </motion.p>
 
           {/* Tech Stack Scroll */}
@@ -123,7 +120,7 @@ const Hero = ({ darkMode }) => {
             variants={itemVariants}
             className="flex flex-wrap items-center justify-center gap-3 sm:gap-6 sm:gap-x-8 mb-8 sm:mb-12 text-gray-400 px-2"
           >
-            {['React', 'Next.js', 'TypeScript', 'Node.js', 'Supabase', 'MySQL'].map((tech) => (
+            {['WordPress', 'PHP', 'MySQL', 'HTML5', 'CSS3', 'JavaScript'].map((tech) => (
               <motion.span
                 key={tech}
                 whileHover={{ scale: 1.1, color: '#0ea5e9' }}

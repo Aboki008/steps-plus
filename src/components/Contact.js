@@ -4,14 +4,14 @@ import { Mail, Github, Linkedin, Twitter } from 'lucide-react';
 
 export default function Contact() {
   const socialLinks = [
-    { icon: Mail, href: 'mailto:contact@example.com', label: 'Email' },
-    { icon: Github, href: 'https://github.com', label: 'GitHub' },
+    { icon: Mail, href: 'mailto:ashaoluolaitan@gmail.com', label: 'Email' },
+    { icon: Github, href: 'https://github.com/Aboki008', label: 'GitHub' },
     { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
     { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' }
   ];
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const whatsappNumber = '+2348114580007';
+  const whatsappNumber = '07035858977';
   const whatsappLink = `https://wa.me/${whatsappNumber.replace(/\D/g, '')}?text=Hi!%20I%20would%20like%20to%20connect%20with%20you.`;
 
   const openModal = (social) => {

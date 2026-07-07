@@ -4,22 +4,22 @@ import { motion } from 'framer-motion';
 export default function Experience() {
   const experiences = [
     {
-      company: 'National Research Institute',
-      position: 'Tutor',
-      period: '2023 - Present',
-      description: 'Delivering lectures, mentoring students, and developing course materials in software engineering and web development (including PHP, MySQL, and server-side best practices).'
+      company: 'Menokraft Services',
+      position: 'WordPress Developer / Website Content Support',
+      period: '2026',
+      description: 'Worked with Menokraft Services on website/content support, page structuring, and digital service presentation. Supported online content for recruitment, outsourcing, corporate training, project management, and HR business solutions.'
     },
     {
-      company: 'Tech Company',
-      position: 'Senior Developer',
-      period: '2020 - 2023',
-      description: 'Led development of full-stack applications; worked on modern frontends with React and maintained/modernized backend systems written in PHP and Node.js. Mentored junior engineers and drove API design and database architecture.'
+      company: 'Self-Employed / Project-Based',
+      position: 'WordPress Developer / PHP Web Administrator',
+      period: '2018 - Present',
+      description: 'Built and maintained websites and web systems for academic, educational, portfolio, and finance-related use cases. Developed PHP/MySQL platforms with secure forms, user sessions, admin roles, file workflows, and reporting features. Managed website content updates, page structure, basic WordPress administration, and digital publishing tasks.'
     },
     {
-      company: 'StartUp Inc',
-      position: 'Full Stack Developer',
-      period: '2018 - 2020',
-      description: 'Built and maintained production web applications including server-side PHP components, RESTful APIs and MySQL integrations; focused on reliable backend solutions and payment integration.'
+      company: 'Freelance Support Role',
+      position: 'Digital Assistant / Website Content Support',
+      period: '2025 - Present',
+      description: 'Updated website content, organized digital files, and improved online page structure for better readability. Supported online research, documentation, email communication, outreach, and content development tasks. Used AI tools and productivity platforms to speed up research, content assistance, and task delivery.'
     }
   ];
 

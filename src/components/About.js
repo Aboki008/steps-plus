@@ -38,14 +38,10 @@ export default function About() {
           viewport={{ once: true }}
         >
           <p className="text-lg leading-relaxed mb-6 text-gray-300 text-justify">
-            I'm a passionate <span className="text-blue-400 font-semibold">full-stack developer</span> with deep expertise in both frontend and server-side development. I have extensive experience building and maintaining LAMP-stack applications using <span className="font-semibold">PHP</span> and <span className="font-semibold">MySQL</span>, alongside modern frontend frameworks.
-          </p>
-          <p className="text-lg leading-relaxed mb-6 text-gray-300 text-justify">
-            My journey in tech has been driven by curiosity and a desire to solve real-world problems. I specialize in <span className="text-blue-400 font-semibold">React</span> for the frontend and <span className="text-blue-400 font-semibold">PHP</span> (including frameworks like <span className="text-blue-400 font-semibold">Laravel</span>) for backend services, building reliable, secure, and performant web applications.
+            WordPress-focused web developer and PHP web administrator with experience building, updating, and managing websites, content platforms, admin dashboards, journal systems, educational websites, and cooperative finance systems. Skilled in PHP, MySQL, HTML5, CSS3, JavaScript, Tailwind CSS, secure form handling, cPanel hosting, content publishing, and remote website support. Strong Computer Science background with MSc Software Engineering currently in view.
           </p>
           <p className="text-lg leading-relaxed text-gray-300 text-justify">
-            When I'm not coding, you can find me exploring new technologies, contributing to open source projects, 
-            or sharing knowledge with the developer community.
+            Nigeria (Remote) | 07035858977 | ashaoluolaitan@gmail.com
           </p>
         </motion.div>
 
