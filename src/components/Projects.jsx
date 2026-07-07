@@ -17,6 +17,12 @@ const TAG_COLORS = {
   'Supabase':      'bg-emerald-500/15 text-emerald-300 border-emerald-500/30',
   'Bootstrap':     'bg-purple-600/15 text-purple-300 border-purple-600/30',
   'Python':        'bg-yellow-500/15 text-yellow-300 border-yellow-500/30',
+  'Paystack':      'bg-emerald-500/15 text-emerald-300 border-emerald-500/30',
+  'Monnify':       'bg-blue-600/15 text-blue-300 border-blue-600/30',
+  'Remita':        'bg-orange-600/15 text-orange-300 border-orange-600/30',
+  'Perplexity API': 'bg-cyan-500/15 text-cyan-300 border-cyan-500/30',
+  'Cloudflare':    'bg-amber-500/15 text-amber-300 border-amber-500/30',
+  'Redis':         'bg-red-500/15 text-red-300 border-red-500/30',
 };
 
 const getTagClass = (tag) =>
@@ -29,8 +35,8 @@ const PROJECTS = [
     badge:    { label: 'AI + React', icon: Bot },
     title:    'Peerwise — AI Manuscript Critic',
     description:
-      'AI-assisted manuscript review platform for academic writing, research feedback, and editorial support. Integrates DeepSeek, Gemini, and Perplexity APIs for real-time critique and research-aware suggestions. Backend built with Python.',
-    tags:     ['React', 'Next.js', 'Tailwind CSS', 'AI', 'DeepSeek API', 'Gemini API', 'Python', 'Vercel'],
+      'AI-assisted manuscript review platform for academic writing, research feedback, and editorial support. Integrates DeepSeek, Gemini, and Perplexity APIs for real-time critique. Backend built with Python. Features Paystack integration for subscriptions.',
+    tags:     ['React', 'Next.js', 'Tailwind CSS', 'AI', 'DeepSeek API', 'Gemini API', 'Perplexity API', 'Python', 'Paystack', 'Vercel'],
     link:     'https://peerwise.vercel.app/',
     gradient: 'from-violet-600 via-purple-600 to-blue-600',
     accent:   'border-violet-500/40',
@@ -85,8 +91,8 @@ const PROJECTS = [
     badge:    { label: 'AI + CBT', icon: Bot },
     title:    'TalentDev — Online Exams & CBT Platform',
     description:
-      'AI-assisted CBT, online exams, assessment, and awarding platform for learners and training organisations. Includes exam workflows, learner records, result management, and AI-powered assessment guidance via DeepSeek and Gemini APIs.',
-    tags:     ['React', 'Next.js', 'Tailwind CSS', 'AI', 'DeepSeek API', 'Gemini API', 'Supabase'],
+      'AI-assisted CBT, online exams, assessment, and awarding platform for learners and training organisations. Includes exam workflows, result management, and AI assessment guidance via DeepSeek and Gemini APIs. Built using Cloudflare Workers, Redis, and Paystack.',
+    tags:     ['React', 'Next.js', 'Tailwind CSS', 'AI', 'DeepSeek API', 'Gemini API', 'Supabase', 'Cloudflare', 'Redis', 'Paystack'],
     link:     'https://www.talentdev.online/',
     gradient: 'from-emerald-600 via-teal-500 to-cyan-500',
     accent:   'border-emerald-500/40',
@@ -100,8 +106,8 @@ const PROJECTS = [
     badge:    { label: 'Education', icon: Globe },
     title:    'Educational Institution Website',
     description:
-      'Dynamic educational website built with Laravel PHP, featuring structured content pages, responsive layout, and easy navigation for a Nigerian vocational school.',
-    tags:     ['PHP', 'Laravel', 'MySQL', 'Tailwind CSS'],
+      'Dynamic educational website built with Laravel PHP, featuring structured content pages, responsive layout, and easy navigation for a Nigerian vocational school, including Monnify fee payments.',
+    tags:     ['PHP', 'Laravel', 'MySQL', 'Tailwind CSS', 'Monnify'],
     link:     'https://fcahptvom.sch.ng/',
     gradient: 'from-purple-600 to-pink-500',
     accent:   'border-purple-500/40',
@@ -128,8 +134,8 @@ const PROJECTS = [
     badge:    { label: 'Finance System', icon: Globe },
     title:    'Cooperative Finance Platform',
     description:
-      'Loan and savings management system with member records, financial transactions, and reporting dashboards for a cooperative society.',
-    tags:     ['PHP', 'MySQL', 'Tailwind CSS'],
+      'Loan and savings management system with member records, financial transactions, and reporting dashboards for a cooperative society, featuring secure Remita payment integration.',
+    tags:     ['PHP', 'MySQL', 'Tailwind CSS', 'Remita'],
     link:     'https://ictls.com.ng/',
     gradient: 'from-green-600 to-emerald-500',
     accent:   'border-green-500/40',

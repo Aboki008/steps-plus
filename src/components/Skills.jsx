@@ -41,6 +41,30 @@ const SKILL_CATEGORIES = [
     ],
   },
   {
+    title:  'Cloud & AI APIs',
+    emoji:  '☁️',
+    accent: 'border-cyan-500/30',
+    dot:    '#06b6d4',
+    skills: [
+      { name: 'Cloudflare Storage', level: 85 },
+      { name: 'Workers / Redis',    level: 82 },
+      { name: 'Perplexity API',     level: 88 },
+      { name: 'Gemini API',         level: 88 },
+    ],
+  },
+  {
+    title:  'Payment Integration',
+    emoji:  '💳',
+    accent: 'border-rose-500/30',
+    dot:    '#f43f5e',
+    skills: [
+      { name: 'Paystack',         level: 92 },
+      { name: 'Monnify',          level: 88 },
+      { name: 'Remita',           level: 85 },
+      { name: 'API Security',     level: 90 },
+    ],
+  },
+  {
     title:  'WordPress & CMS',
     emoji:  '🔧',
     accent: 'border-violet-500/30',
@@ -55,9 +79,8 @@ const SKILL_CATEGORIES = [
 ];
 
 const EXTRA_TOOLS = [
-  'Paystack', 'Monnify', 'Remita',
   'cPanel', 'Git', 'Google Workspace', 'Canva', 'CapCut',
-  'Figma', 'Perplexity API', 'VS Code', 'Netlify', 'CI/CD',
+  'Figma', 'VS Code', 'Netlify', 'CI/CD',
   'Antigravity', 'DevinAI', 'Windsurf', 'Roo', 'Cline',
 ];
 
@@ -88,7 +111,7 @@ export default function Skills() {
         </motion.div>
 
         {/* ── Skills grid ─────────────────────────────────────── */}
-        <div ref={ref} className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div ref={ref} className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {SKILL_CATEGORIES.map((cat, catIdx) => (
             <motion.div
               key={cat.title}
