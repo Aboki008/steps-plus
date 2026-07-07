@@ -5,6 +5,18 @@ import { Briefcase, GraduationCap, Calendar, MapPin } from 'lucide-react';
 
 const experiences = [
   {
+    company:    'Polytechnics & Colleges in Nigeria',
+    position:   'Software Engineering Tutor & Mentor',
+    period:     '2021 – Present',
+    location:   'Nigeria',
+    type:       'Education',
+    description:
+      'Tutor and mentor students in software engineering, web development, and programming fundamentals. Guide students through practical projects, code reviews, and career preparation in the tech industry.',
+    skills:     ['Teaching', 'Mentoring', 'Software Engineering', 'Web Development'],
+    color:      'text-amber-400',
+    dot:        '#f59e0b',
+  },
+  {
     company:    'Self-Employed / Project-Based',
     position:   'Full Stack Developer / PHP Web Administrator',
     period:     '2018 – Present',
